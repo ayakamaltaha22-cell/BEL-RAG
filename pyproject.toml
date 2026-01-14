@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "belrag"
+version = "0.1.0"
+description = "BEL-RAG: Bayesian Evidence-Leasing RAG with Counterfactual Auditing and Policy-Aware Retrieval (reference implementation)"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.22",
+  "scikit-learn>=1.2",
+]

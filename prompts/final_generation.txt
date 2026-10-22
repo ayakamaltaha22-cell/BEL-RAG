@@ -1,0 +1,2 @@
+PROPOSED PROMPT — not verified as used in the original manuscript.
+Generate a response using only accepted or explicitly qualified claims and their audited support. Cite supporting passage IDs. Do not add unsupported facts. If support is insufficient, qualify or abstain.

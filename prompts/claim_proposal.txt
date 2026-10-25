@@ -1,2 +1,0 @@
-PROPOSED PROMPT — not verified as used in the original manuscript.
-Given a user question, propose a provisional answer and decompose it into atomic, independently falsifiable factual claims. Assign stable claim IDs. Do not present the provisional answer as verified.

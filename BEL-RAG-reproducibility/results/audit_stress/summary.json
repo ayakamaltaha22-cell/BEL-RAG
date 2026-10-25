@@ -1,0 +1,100 @@
+{
+  "evaluation": "measured computational results on generated controlled cases; NOT original NQ/HotpotQA/MetaQA/StrategyQA",
+  "posterior_model": "declared joint log-odds with source-cluster deduplication and pairwise interactions",
+  "seed": 13,
+  "tau": 0.9,
+  "per_kind": 50,
+  "overall": {
+    "n": 300,
+    "optimal_feasible": 262,
+    "greedy_feasible": 262,
+    "greedy_feasibility_recall": 1.0,
+    "optimality_rate_conditional_on_both_feasible": 0.8053435114503816,
+    "mean_approx_ratio_conditional_on_both_feasible": 1.0973282442748091,
+    "max_approx_ratio": 1.5,
+    "mean_greedy_posterior_evaluations": 18.64666666666667,
+    "mean_exhaustive_posterior_evaluations": 21.15,
+    "median_greedy_ms": 0.023681,
+    "median_exhaustive_ms": 0.015218
+  },
+  "by_scenario": {
+    "ordinary": {
+      "n": 50,
+      "optimal_feasible": 38,
+      "greedy_feasible": 38,
+      "greedy_feasibility_recall": 1.0,
+      "optimality_rate_conditional_on_both_feasible": 1.0,
+      "mean_approx_ratio_conditional_on_both_feasible": 1.0,
+      "max_approx_ratio": 1.0,
+      "mean_greedy_posterior_evaluations": 19.06,
+      "mean_exhaustive_posterior_evaluations": 29,
+      "median_greedy_ms": 0.0250975,
+      "median_exhaustive_ms": 0.01994
+    },
+    "redundant": {
+      "n": 50,
+      "optimal_feasible": 31,
+      "greedy_feasible": 31,
+      "greedy_feasibility_recall": 1.0,
+      "optimality_rate_conditional_on_both_feasible": 1.0,
+      "mean_approx_ratio_conditional_on_both_feasible": 1.0,
+      "max_approx_ratio": 1.0,
+      "mean_greedy_posterior_evaluations": 17.22,
+      "mean_exhaustive_posterior_evaluations": 26.08,
+      "median_greedy_ms": 0.021077,
+      "median_exhaustive_ms": 0.015038
+    },
+    "conflicting": {
+      "n": 50,
+      "optimal_feasible": 50,
+      "greedy_feasible": 50,
+      "greedy_feasibility_recall": 1.0,
+      "optimality_rate_conditional_on_both_feasible": 1.0,
+      "mean_approx_ratio_conditional_on_both_feasible": 1.0,
+      "max_approx_ratio": 1.0,
+      "mean_greedy_posterior_evaluations": 17,
+      "mean_exhaustive_posterior_evaluations": 9.58,
+      "median_greedy_ms": 0.0214475,
+      "median_exhaustive_ms": 0.009695
+    },
+    "jointly_sufficient": {
+      "n": 50,
+      "optimal_feasible": 50,
+      "greedy_feasible": 50,
+      "greedy_feasibility_recall": 1.0,
+      "optimality_rate_conditional_on_both_feasible": 1.0,
+      "mean_approx_ratio_conditional_on_both_feasible": 1.0,
+      "max_approx_ratio": 1.0,
+      "mean_greedy_posterior_evaluations": 17,
+      "mean_exhaustive_posterior_evaluations": 22.92,
+      "median_greedy_ms": 0.0220785,
+      "median_exhaustive_ms": 0.0214575
+    },
+    "synergy_trap": {
+      "n": 50,
+      "optimal_feasible": 50,
+      "greedy_feasible": 50,
+      "greedy_feasibility_recall": 1.0,
+      "optimality_rate_conditional_on_both_feasible": 0.0,
+      "mean_approx_ratio_conditional_on_both_feasible": 1.5,
+      "max_approx_ratio": 1.5,
+      "mean_greedy_posterior_evaluations": 23.5,
+      "mean_exhaustive_posterior_evaluations": 21.2,
+      "median_greedy_ms": 0.0325745,
+      "median_exhaustive_ms": 0.018633
+    },
+    "mixed": {
+      "n": 50,
+      "optimal_feasible": 43,
+      "greedy_feasible": 43,
+      "greedy_feasibility_recall": 1.0,
+      "optimality_rate_conditional_on_both_feasible": 0.9767441860465116,
+      "mean_approx_ratio_conditional_on_both_feasible": 1.0116279069767442,
+      "max_approx_ratio": 1.5,
+      "mean_greedy_posterior_evaluations": 18.1,
+      "mean_exhaustive_posterior_evaluations": 18.12,
+      "median_greedy_ms": 0.0280375,
+      "median_exhaustive_ms": 0.0165045
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "status": "dataset release revisions and checksums not yet verified",
+  "datasets": [
+    {"name":"Natural Questions", "variant":"open-domain", "release":"PIN_EXACT_RELEASE", "source":"https://ai.google.com/research/NaturalQuestions", "split_counts":"MEASURE"},
+    {"name":"HotpotQA", "variant":"distractor", "release":"PIN_EXACT_RELEASE", "source":"https://hotpotqa.github.io/", "split_counts":"MEASURE"},
+    {"name":"MetaQA", "variant":"1-hop/2-hop/3-hop", "release":"PIN_EXACT_RELEASE", "source":"IDENTIFY_OFFICIAL_RELEASE", "split_counts":"MEASURE"},
+    {"name":"StrategyQA", "variant":"original", "release":"PIN_EXACT_RELEASE", "source":"https://github.com/eladsegal/strategyqa", "split_counts":"MEASURE"},
+    {"name":"PolicyRAG Stress Suite", "variant":"four policy categories", "release":"NOT_PROVIDED", "case_count_reported_in_manuscript":600, "case_level_records":"NOT_PROVIDED"}
+  ]
+}

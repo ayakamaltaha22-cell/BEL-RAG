@@ -1,0 +1,2 @@
+PROPOSED PROMPT — not verified as used in the original manuscript.
+Given one atomic claim and one policy-admissible passage, return JSON with claim_id, passage_id, and relation, where relation is one of entailment, contradiction, insufficient_information. Use only the supplied passage.

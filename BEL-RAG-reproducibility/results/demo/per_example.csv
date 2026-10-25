@@ -1,0 +1,7 @@
+id,gold,prediction,correct,leased_count,posterior,cfs,accepted,policy_violations
+q1,Paris,Paris,True,1,0.9451,1.0,True,0
+q2,Mars,Mars,True,1,0.941148,1.0,True,0
+q3,Au,Au,True,1,0.937,1.0,True,0
+q4,Jane Austen,Jane Austen,True,1,0.912882,1.0,True,0
+q5,Pacific Ocean,Pacific Ocean,True,1,0.915428,1.0,True,0
+q6,0,ABSTAIN,False,1,0.037869,0.0,False,0

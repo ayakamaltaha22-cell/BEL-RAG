@@ -1,0 +1,138 @@
+[
+  {
+    "id": "q1",
+    "leased_ids": [
+      "q1-support"
+    ],
+    "support_ids": [
+      "q1-support"
+    ],
+    "candidate_ids": [
+      "q1-support",
+      "q5-support",
+      "q1-distractor",
+      "q5-distractor",
+      "q3-support",
+      "q2-support",
+      "q3-distractor",
+      "q2-distractor",
+      "q4-distractor",
+      "q4-support",
+      "q6-distractor",
+      "q6-support"
+    ]
+  },
+  {
+    "id": "q2",
+    "leased_ids": [
+      "q2-support"
+    ],
+    "support_ids": [
+      "q2-support"
+    ],
+    "candidate_ids": [
+      "q2-support",
+      "q2-distractor",
+      "q5-support",
+      "q5-distractor",
+      "q1-support",
+      "q3-support",
+      "q3-distractor",
+      "q1-distractor",
+      "q4-distractor",
+      "q4-support",
+      "q6-distractor",
+      "q6-support"
+    ]
+  },
+  {
+    "id": "q3",
+    "leased_ids": [
+      "q3-support"
+    ],
+    "support_ids": [
+      "q3-support"
+    ],
+    "candidate_ids": [
+      "q3-support",
+      "q3-distractor",
+      "q5-support",
+      "q1-support",
+      "q5-distractor",
+      "q2-support",
+      "q1-distractor",
+      "q2-distractor",
+      "q4-distractor",
+      "q4-support",
+      "q6-distractor",
+      "q6-support"
+    ]
+  },
+  {
+    "id": "q4",
+    "leased_ids": [
+      "q4-support"
+    ],
+    "support_ids": [
+      "q4-support"
+    ],
+    "candidate_ids": [
+      "q4-support",
+      "q4-distractor",
+      "q1-distractor",
+      "q1-support",
+      "q2-distractor",
+      "q2-support",
+      "q3-distractor",
+      "q3-support",
+      "q5-distractor",
+      "q5-support",
+      "q6-distractor",
+      "q6-support"
+    ]
+  },
+  {
+    "id": "q5",
+    "leased_ids": [
+      "q5-support"
+    ],
+    "support_ids": [
+      "q5-support"
+    ],
+    "candidate_ids": [
+      "q5-support",
+      "q5-distractor",
+      "q1-support",
+      "q3-support",
+      "q2-support",
+      "q3-distractor",
+      "q1-distractor",
+      "q2-distractor",
+      "q4-distractor",
+      "q4-support",
+      "q6-distractor",
+      "q6-support"
+    ]
+  },
+  {
+    "id": "q6",
+    "leased_ids": [
+      "q1-support"
+    ],
+    "support_ids": [],
+    "candidate_ids": [
+      "q1-support",
+      "q1-distractor",
+      "q6-support",
+      "q6-distractor",
+      "q5-support",
+      "q5-distractor",
+      "q3-support",
+      "q2-support",
+      "q3-distractor",
+      "q2-distractor",
+      "q4-distractor",
+      "q4-support"
+    ]
+  }
+]

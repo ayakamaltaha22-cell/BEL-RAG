@@ -1,0 +1,67 @@
+status: proposed_reference_configuration_not_verified_original_run
+experiment:
+  seeds: [13, 37, 71]
+  max_audit_rounds: 3
+  evaluation_results_status: not_provided
+models:
+  generator: mistralai/Mistral-7B-Instruct-v0.3
+  generator_revision: PIN_AFTER_DOWNLOAD
+  max_new_tokens: 512
+  do_sample: false
+  temperature: 0
+  retriever: BAAI/bge-base-en-v1.5
+  retriever_revision: PIN_AFTER_DOWNLOAD
+  cross_encoder: SELECT_AND_PIN
+  nli: SELECT_AND_PIN
+retrieval:
+  index: faiss.IndexFlatIP
+  faiss_version: 1.8.0
+  embedding_l2_normalization: true
+  chunk_tokens: 128
+  overlap_tokens: 32
+  prepend_title: true
+  candidate_depth: 50
+  max_leased_passages_per_query: 8
+  deduplication: exact_normalized_text
+  tie_break: passage_id_ascending
+  bm25: {k1: 0.9, b: 0.4}
+  hybrid: {dense_weight: 0.5, lexical_weight: 0.5, scaling: per_query_min_max, constant_score_rule: zero}
+calibration:
+  model: sklearn.linear_model.LogisticRegression
+  penalty: l2
+  C: 1.0
+  C_grid: [0.01, 0.1, 1, 10, 100]
+  features: [dense_similarity, cross_encoder_relevance, nli_entailment, source_reliability, normalized_passage_age, max_cosine_prior_leases]
+  standardization: fit_training_calibration_only
+  fitted_means: NOT_FITTED
+  fitted_stds: NOT_FITTED
+  fitted_coefficients: NOT_FITTED
+  fitted_intercept: NOT_FITTED
+  class_prior: NOT_FITTED
+  clipping: [0.01, 0.99]
+  clipping_grid: [[0.001, 0.999], [0.005, 0.995], [0.01, 0.99]]
+  ece_max: 0.05
+  ece_bins: 15
+leasing:
+  tau: 0.90
+  tau_grid: [0.75, 0.80, 0.85, 0.90, 0.95]
+  lambda: 0.05
+  lambda_grid: [0.01, 0.025, 0.05, 0.10, 0.20]
+  max_passages_grid: [4, 6, 8, 10, 12]
+  cost_unit: normalized_acquisition_cost
+  reference_cost: MEASURE_ON_DEVELOPMENT_SET
+  reuse_budget_after_audit: false
+counterfactual:
+  necessity_weight_alpha: 0.5
+  alpha_grid: [0.25, 0.5, 0.75]
+  acceptance_kappa: 0.6
+  kappa_grid: [0.5, 0.6, 0.7, 0.8]
+software:
+  python: '3.11'
+  torch: '2.4'
+  transformers: '4.44'
+  sentence_transformers: '3.0'
+  faiss: '1.8.0'
+  scikit_learn: '1.5'
+  numpy: '2.0'
+  cuda: '12.1'

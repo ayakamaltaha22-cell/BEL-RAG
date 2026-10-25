@@ -1,7 +1,0 @@
-numpy>=1.26
-scikit-learn>=1.4
-transformers>=4.44
-torch>=2.2
-sentence-transformers>=3.0
-faiss-cpu>=1.8
-pytest>=8
